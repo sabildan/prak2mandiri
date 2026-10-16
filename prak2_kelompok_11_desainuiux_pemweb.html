@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktikum 2: HTML Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #eee;">
+
+    <h2 style="text-align: center;">Form Pemesanan Barang</h2>
+
+    <hr>
+
+    <nav style="text-align: center; border: 1px solid black; padding: 8px;">
+        <a href="#">Home</a> &nbsp; | &nbsp;
+        <a href="#">Generate Link</a> &nbsp; | &nbsp;
+        <a href="#">Transaction History</a> &nbsp; | &nbsp;
+        <a href="#">Policy</a> &nbsp; | &nbsp;
+        <a href="#">Logout</a>
+    </nav>
+
+    <br><br>
+
+    <form action="#hasil" method="get">
+
+        <table cellpadding="8" align="center">
+            <tr>
+                <td rowspan="5" valign="top">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQErLHF073aZZAYU1BLNmrM3DhizC-iTSM8WkwpM1-tkQ&s"
+                         alt="Foto Barang"
+                         width="150"
+                         height="150"
+                         style="border: 1px solid black;">
+                    <br><br>
+                    <input type="file" name="picture" accept="image/*">
+                </td>
+
+                <td>Title Here :</td>
+                <td>
+                    <input type="text" name="title"
+                           value="MacBook Air E800" size="35">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Description :</td>
+                <td>
+                    <textarea name="description" rows="4" cols="36">Year : 2009
+Model :
+Condition : Mint</textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Total Amount :</td>
+                <td>
+                    <input type="text" name="amount" value="£800" size="35">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pay to :</td>
+                <td>
+                    <input type="text" name="payto"
+                           value="123-456-789-0" size="35">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Payment Type :</td>
+                <td>
+                    <select name="payment_type">
+                        <option>Visa Debit</option>
+                        <option>Mastercard</option>
+                        <option>Cash</option>
+                        <option>Bank Transfer</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>Account Holder :</td>
+                <td>
+                    <input type="text" name="account_holder"
+                           value="Name Here" size="35">
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>Account No :</td>
+                <td>
+                    <input type="text" name="account_no"
+                           value="123-456-789-0" size="35">
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <input type="checkbox" name="mobile" checked>
+                    <span style="color: green;">Send to Mobile Phone</span>
+                    <br>
+
+                    <input type="checkbox" name="email_copy" checked>
+                    <span style="color: green;">Email me copy of transaction</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>Send to Mobile Phone :</td>
+                <td>
+                    <input type="tel" name="mobile_phone"
+                           value="1234567890, 1234567891" size="35">
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>Send to Email :</td>
+                <td>
+                    <input type="email" name="email"
+                           value="mfmm2g13@soton.ac.uk" size="35">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" align="center">
+                    <br>
+                    <button type="submit"
+                            style="background-color: green; color: white;
+                            padding: 8px 20px;">
+                        Generate Nabr Link
+                    </button>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+    <hr>
+
+    <h2 id="hasil" style="text-align: center;">Hasil Pemesanan Barang</h2>
+
+    <nav style="text-align: center; border: 1px solid black; padding: 8px;">
+        <a href="#">Home</a> &nbsp; | &nbsp;
+        <a href="#">Register</a> &nbsp; | &nbsp;
+        <a href="#">Policy</a> &nbsp; | &nbsp;
+        <a href="#">About</a>
+    </nav>
+
+    <br>
+
+    <table cellpadding="8" align="center">
+        <tr>
+            <td rowspan="4" valign="top">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQErLHF073aZZAYU1BLNmrM3DhizC-iTSM8WkwpM1-tkQ&s"
+                     alt="Foto Barang"
+                     width="120"
+                     height="120"
+                     style="border: 1px solid black;">
+            </td>
+            <td>Title Here :</td>
+            <td>MacBook Air E800</td>
+        </tr>
+
+        <tr>
+            <td>Description :</td>
+            <td>
+                Year : 2009<br>
+                Model :<br>
+                Condition : Mint
+            </td>
+        </tr>
+
+        <tr>
+            <td>Total Amount :</td>
+            <td>£800</td>
+        </tr>
+
+        <tr>
+            <td>Pay to :</td>
+            <td>123-456-789-0</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Payment Type :</td>
+            <td>Visa Debit</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Account Holder :</td>
+            <td>Name Here</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Account No :</td>
+            <td>123-456-789-0</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td colspan="2">
+                <span style="color: green;">
+                    &#10003; Send to Mobile Phone<br>
+                    &#10003; Email me copy of transaction
+                </span>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Send to Mobile Phone :</td>
+            <td>1234567890, 1234567891</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Send to Email :</td>
+            <td>mfmm2g13@soton.ac.uk</td>
+        </tr>
+
+        <tr>
+            <td colspan="3" align="center">
+                <br>
+                <button style="background-color: green; color: white;
+                padding: 8px 20px;">
+                    Pay using QuidLink
+                </button>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+</body>
+</html>
